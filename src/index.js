@@ -1,3 +1,4 @@
+import { showWeatherUI,resetWeatherUI } from "./ui";
 import { getWeather } from "./api";
 
 export class WeatherInfo{
@@ -10,4 +11,7 @@ export class WeatherInfo{
     }
 }
 
-getWeather("sydney");
+export function loadNewWeather(newCity){
+    resetWeatherUI()
+    .then(getWeather(newCity));
+}
