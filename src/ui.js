@@ -41,5 +41,8 @@ export async function resetWeatherUI(){
 const searchBtn = document.getElementById("searchBtn");
 const searchBar = document.getElementById("newCity");
 
-searchBtn.addEventListener("click", () => loadNewWeather(searchBar.value))
+searchBtn.addEventListener("click", () => {loadNewWeather(searchBar.value);
+searchBar.value = "";
+})
+
 })();

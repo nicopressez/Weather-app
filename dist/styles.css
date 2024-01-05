@@ -1,0 +1,19 @@
+*, *::before, *::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    text-align: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #e23336;
+    color: #96a3aa;
+}
+
+.head > h1{
+    padding-top: ;
+}
+.weatherInfo{
+    background-color:#2f5f8b;
+}
