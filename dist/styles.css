@@ -3,18 +3,67 @@
 *::after {
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #96a3aa;
+}
+
+.searchBar{
+    margin-top: 20px;
+    position:relative;
+    transform: translateX(44%);
+    margin-bottom: 50px;
+}
+
+.searchBar input{
+    vertical-align: middle;
+    height: 40px;
+    width: 200px;
+    font-size: 1.5rem;
+}
+
+.searchBar button{
+    vertical-align: middle;
+    height: 40px;
+}
 .head {
   text-align: center;
   width: 100vw;
   height: 10vh;
-  background-color: #e23336;
-  color: #96a3aa;
+  background-color: #1d2930;
+  color: white;
 }
 
 .head > h1 {
+    font-size: 2rem;
+    margin-top: 25px;
 }
-.weatherInfo {
-  background-color: #2f5f8b;
+.currentWeatherInfo {
+     border-radius: 3%;
+     background-color: #1d2930;
+     color: #dfdedd;
+     width: 20%;
+     height: 30vh;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+}
+
+.currentWeatherInfo > h2{
+font-size: 2.5rem;
+padding-top: 15px;
+margin-bottom: 20px;
+}
+
+.currentWeatherInfo > h4{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.currentWeatherInfo > p{
+    margin-top: 20px;
 }
